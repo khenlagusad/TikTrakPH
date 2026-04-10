@@ -1,0 +1,325 @@
+/* ── HERO ── */
+.tickets-hero {
+    background-color: #0038a8;
+    background-image: linear-gradient(135deg, #0038a8 0%, #0052cc 60%, #003080 100%);
+    padding: 40px 48px;
+}
+
+.tickets-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tickets-greeting {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.tickets-hero h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.tickets-sub {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── CONTAINER ── */
+.tickets-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 40px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ── SECTION LABELS ── */
+.section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #0038a8;
+    margin-bottom: 3px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin: 0;
+}
+
+/* ── ACTION CARD ── */
+.action-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 56, 168, 0.07);
+    overflow: hidden;
+}
+
+.action-card-header {
+    padding: 20px 28px;
+    border-bottom: 1.5px solid #f0f4f8;
+}
+
+.action-card-body {
+    padding: 24px 28px;
+}
+
+#pay-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ── FORM GROUP ── */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #3a4a5c;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.form-group select {
+    height: 44px;
+    padding: 0 16px;
+    border: 1.5px solid #d0daf0;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #0038a8;
+    background: #f0f4ff;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230038a8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.form-group select:focus {
+    border-color: #0038a8;
+    box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.08);
+}
+
+/* ── BUTTONS ── */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-pay,
+.btn-dispute {
+    height: 44px;
+    padding: 0 22px;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-pay {
+    background-color: #0038a8;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-pay:hover { background-color: #002d8a; }
+
+.btn-dispute {
+    background-color: #fff8e0;
+    color: #a06000;
+    border: 1.5px solid #f0d080;
+}
+
+.btn-dispute:hover {
+    background-color: #fff0b0;
+    border-color: #d4a000;
+}
+
+/* ── TICKETS CARD ── */
+.tickets-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 56, 168, 0.07);
+    overflow: hidden;
+}
+
+.tickets-card-header {
+    padding: 20px 28px;
+    border-bottom: 1.5px solid #f0f4f8;
+}
+
+/* ── TABLE ── */
+.table-wrap {
+    overflow-y: auto;
+    max-height: 480px;
+}
+
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.tickets-table thead {
+    position: sticky;
+    top: 0;
+    background: #f5f8ff;
+    z-index: 1;
+}
+
+.tickets-table thead th {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #8a9bb5;
+    border-bottom: 1.5px solid #e8edf5;
+    white-space: nowrap;
+}
+
+.tickets-table tbody tr {
+    border-bottom: 1px solid #f0f4f8;
+    transition: background 0.15s;
+}
+
+.tickets-table tbody tr:last-child { border-bottom: none; }
+.tickets-table tbody tr:hover { background: #f9fbff; }
+
+.tickets-table tbody td {
+    padding: 14px 20px;
+    color: #3a4a5c;
+    vertical-align: middle;
+}
+
+.ticket-ref {
+    font-family: monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #0038a8;
+    background: #f0f4ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.violation-name {
+    font-weight: 600;
+    color: #0a1f44;
+}
+
+.plate-number {
+    font-family: monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #0a1f44;
+    background: #f5f8ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+.city-name   { color: #8a9bb5; font-size: 0.82rem; }
+.ticket-date { color: #8a9bb5; font-size: 0.82rem; }
+.ticket-fine { font-weight: 700; color: #0a1f44; }
+
+/* ── BADGES ── */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.badge-unpaid {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-pending {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.badge-resolved {
+    background-color: #e8f4fd;
+    color: #1a5276;
+}
+
+.badge-paid {
+    background: #eafaf0;
+    color: #1a7a3c;
+}
+
+/* ── EMPTY STATE ── */
+.empty-state {
+    text-align: center;
+    padding: 56px 24px;
+}
+
+.empty-icon { font-size: 2.2rem; margin-bottom: 14px; }
+
+.empty-state h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 6px;
+}
+
+.empty-state p { font-size: 0.875rem; color: #8a9bb5; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    .tickets-hero      { padding: 32px 20px; }
+    .tickets-container { padding: 24px 16px 56px; }
+    #pay-form          { flex-direction: column; align-items: stretch; }
+    .action-buttons    { flex-direction: column; }
+    .btn-pay,
+    .btn-dispute       { width: 100%; text-align: center; }
+}

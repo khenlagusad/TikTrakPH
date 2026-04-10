@@ -1,0 +1,93 @@
+/* admin-brand.css */
+
+/* ── Header wrapper ── */
+header {
+    background: #111111;
+    border-bottom: 2px solid #b91c1c;
+    padding: 0 32px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+/* ── Brand link ── */
+.admin-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.admin-brand:hover {
+    opacity: 0.85;
+}
+
+/* ── Logo tile ── */
+.admin-brand-logo {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(185, 28, 28, 0.45);
+    flex-shrink: 0;
+}
+
+.admin-brand-letter {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+.admin-badge {
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    background: #fbbf24;
+    color: #1a1a1a;
+    font-size: 0.45rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    padding: 2px 5px;
+    border-radius: 4px;
+    line-height: 1.4;
+    border: 1.5px solid #111;
+    text-transform: uppercase;
+}
+
+/* ── Brand text ── */
+.admin-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.admin-brand-text span {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #f1f1f1;
+    letter-spacing: -0.3px;
+}
+
+.admin-brand-text small {
+    font-size: 0.68rem;
+    color: #ef4444;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    header {
+        padding: 0 16px;
+        height: 54px;
+    }
+}

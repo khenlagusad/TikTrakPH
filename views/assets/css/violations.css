@@ -1,0 +1,285 @@
+/* ── VIOLATIONS HERO ── */
+.violations-hero {
+    background-color: #0038a8;
+    background-image: linear-gradient(135deg, #0038a8 0%, #0052cc 60%, #003080 100%);
+    padding: 48px 40px;
+    text-align: center;
+}
+
+.violations-hero-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.search-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    padding: 5px 16px;
+    margin-bottom: 16px;
+}
+
+.search-meta-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.search-meta-value {
+    font-size: 0.85rem;
+    color: #fcd116;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info {
+    color: #fcd116;
+}
+
+.violations-hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.violations-hero p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.95rem;
+}
+
+/* ── CONTAINER ── */
+.violations-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 40px 64px;
+}
+
+/* ── SETTLE NOTICE ── */
+.settle-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f4ff;
+    border: 1.5px solid #c5d3f5;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    font-size: 0.8rem;
+    color: #3a4a5c;
+    line-height: 1;
+}
+
+.settle-notice-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.settle-notice strong {
+    color: #0a1f44;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.settle-notice a {
+    color: #0038a8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.settle-notice a:hover {
+    text-decoration: underline;
+}
+
+/* ── VIOLATIONS CARD ── */
+.violations-card {
+    background: #ffffff;
+    border: 1.5px solid #e8edf5;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.violations-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e8edf5;
+}
+
+.violations-card-header h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 2px;
+}
+
+.result-count {
+    font-size: 0.78rem;
+    color: #8a9bb5;
+    font-weight: 500;
+}
+
+.btn-back {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0038a8;
+    text-decoration: none;
+    padding: 7px 16px;
+    border: 1.5px solid #d0daf0;
+    border-radius: 8px;
+    transition: background-color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background-color: #f0f4ff;
+    border-color: #b0c0e8;
+}
+
+/* ── SCROLLABLE TABLE ── */
+.table-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.violations-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    table-layout: fixed;
+}
+
+.violations-table thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.violations-table thead th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #8a9bb5;
+    border-bottom: 1px solid #e8edf5;
+    background: #f5f8ff;
+    white-space: nowrap;
+}
+
+.violations-table tbody {
+    display: block;
+    height: 700px;
+    min-height: 700px;
+    overflow-y: auto;
+}
+
+.violations-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-bottom: 1px solid #f0f4f8;
+    transition: background-color 0.15s;
+}
+
+.violations-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.violations-table tbody tr:hover {
+    background-color: #f9fbff;
+}
+
+.violations-table tbody td {
+    padding: 14px 24px;
+    color: #3a4a5c;
+    vertical-align: middle;
+}
+
+.ticket-id {
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0038a8;
+    background: #f0f4ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.violation-type {
+    font-weight: 600;
+    color: #0a1f44;
+}
+
+.violation-date {
+    color: #8a9bb5;
+    font-size: 0.825rem;
+}
+
+/* ── STATUS BADGES ── */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-unpaid {
+    background: #fff0f0;
+    color: #ce1126;
+}
+
+.badge-paid {
+    background: #eafaf0;
+    color: #1a7a3c;
+}
+
+.badge-disputed {
+    background: #fff8e0;
+    color: #a06000;
+}
+
+/* ── EMPTY STATE ── */
+.empty-state {
+    text-align: center;
+    padding: 56px 24px;
+}
+
+.empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 0.875rem;
+    color: #8a9bb5;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .violations-hero { padding: 36px 20px; }
+    .violations-container { padding: 24px 16px 48px; }
+    .violations-card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .violations-table thead th,
+    .violations-table tbody td { padding: 12px 16px; }
+}

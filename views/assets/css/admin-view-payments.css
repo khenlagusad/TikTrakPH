@@ -1,0 +1,107 @@
+/* admin-view-payments.css */
+
+main {
+    margin-left: 240px;
+    min-height: 100vh;
+    background: #f0f4fa;
+    padding: 36px 40px;
+}
+
+/* ── HEADER ── */
+.total-payments {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 24px;
+}
+
+/* ── TABLE WRAP ── */
+.table-wrap {
+    background: #ffffff;
+    border: 1.5px solid #e8edf5;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 56, 168, 0.06);
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+}
+
+.table-wrap .dashboard-table thead {
+    flex-shrink: 0;
+}
+
+.table-wrap > div,
+.table-wrap {
+    overflow-y: auto;
+}
+
+/* ── TABLE ── */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.dashboard-table thead {
+    background: #f5f8ff;
+}
+
+.dashboard-table thead th {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #8a9bb5;
+    border-bottom: 1.5px solid #e8edf5;
+    white-space: nowrap;
+}
+
+.dashboard-table tbody tr {
+    border-bottom: 1px solid #f0f4f8;
+    transition: background 0.15s;
+}
+
+.dashboard-table tbody tr:last-child { border-bottom: none; }
+.dashboard-table tbody tr:hover      { background: #f9fbff; }
+
+.dashboard-table tbody td {
+    padding: 14px 20px;
+    color: #3a4a5c;
+    vertical-align: middle;
+}
+
+/* ── CELL STYLES ── */
+.dashboard-table tbody td:first-child {
+    font-family: monospace;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0038a8;
+}
+
+.dashboard-table tbody td:nth-child(2) {
+    font-weight: 600;
+    color: #0a1f44;
+}
+
+.dashboard-table tbody td:nth-child(3) {
+    font-weight: 700;
+    color: #1a7a3c;
+}
+
+.dashboard-table tbody td:nth-child(4) {
+    color: #8a9bb5;
+    font-size: 0.82rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    main           { margin-left: 200px; padding: 24px 20px; }
+    .table-wrap    { overflow-x: auto; }
+}
+
+@media (max-width: 640px) {
+    main           { margin-left: 0; padding: 20px 16px; }
+}

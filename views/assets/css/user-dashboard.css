@@ -1,0 +1,325 @@
+/* ── HERO ── */
+.dashboard-hero {
+    background-color: #0038a8;
+    background-image: linear-gradient(135deg, #0038a8 0%, #0052cc 60%, #003080 100%);
+    padding: 40px 48px;
+}
+
+.dashboard-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dashboard-greeting {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.dashboard-hero h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.dashboard-license {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-license span {
+    color: #fcd116;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ── CONTAINER ── */
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 40px 72px;
+}
+
+/* ── GRID ── */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ── SECTION ── */
+.dashboard-section {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 56, 168, 0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+}
+
+/* ── SECTION HEADER ── */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1.5px solid #f0f4f8;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #0038a8;
+    margin-bottom: 3px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin: 0;
+}
+
+/* ── MANAGE BUTTON ── */
+.btn-manage {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #0038a8;
+    text-decoration: none;
+    padding: 7px 16px;
+    border: 1.5px solid #d0daf0;
+    border-radius: 8px;
+    background: #f0f4ff;
+    transition: background-color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+}
+
+.btn-manage:hover {
+    background-color: #e0eaff;
+    border-color: #0038a8;
+}
+
+/* ── VEHICLES LIST ── */
+.vehicles-list {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.vehicle-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 1.5px solid #e8edf5;
+    border-radius: 12px;
+    background: #f8faff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vehicle-card:hover {
+    border-color: #0038a8;
+    box-shadow: 0 4px 12px rgba(0, 56, 168, 0.08);
+}
+
+.vehicle-icon {
+    width: 44px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1.5px solid #e8edf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.vehicle-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.vehicle-plate {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0038a8;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+}
+
+.vehicle-brand {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #8a9bb5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vehicle-model {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #8a9bb5;
+}
+
+.vehicle-color {
+    font-size: 0.72rem;
+    color: #8a9bb5;
+    font-weight: 500;
+}
+
+/* ── DASHBOARD CARD ── */
+.dashboard-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ── TABLE WRAP ── */
+.table-wrap {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* ── TABLE ── */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.dashboard-table thead {
+    position: sticky;
+    top: 0;
+    background: #f5f8ff;
+    z-index: 1;
+}
+
+.dashboard-table thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #8a9bb5;
+    border-bottom: 1.5px solid #e8edf5;
+    white-space: nowrap;
+}
+
+.dashboard-table tbody tr {
+    border-bottom: 1px solid #f0f4f8;
+    transition: background 0.15s;
+}
+
+.dashboard-table tbody tr:last-child { border-bottom: none; }
+.dashboard-table tbody tr:hover { background: #f9fbff; }
+
+.dashboard-table tbody td {
+    padding: 14px 16px;
+    color: #3a4a5c;
+    vertical-align: middle;
+}
+
+.ticket-ref {
+    font-family: monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #0038a8;
+    background: #f0f4ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.violation-name {
+    font-weight: 600;
+    color: #0a1f44;
+}
+
+.ticket-date { color: #8a9bb5; font-size: 0.8rem; }
+.ticket-fine { font-weight: 700; color: #0a1f44; }
+
+/* ── BASE BADGE ── */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ── STATUS ── */
+.badge-unpaid {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-pending {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.badge-paid { background: #eafaf0; color: #1a7a3c; }
+
+/* ── EMPTY STATE ── */
+.empty-state {
+    text-align: center;
+    padding: 48px 24px;
+}
+
+.empty-icon {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+}
+
+.empty-state h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 6px;
+}
+
+.empty-state p {
+    font-size: 0.875rem;
+    color: #8a9bb5;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .dashboard-grid      { grid-template-columns: 1fr; }
+    .dashboard-container { padding: 24px 20px 56px; }
+    .dashboard-hero      { padding: 32px 20px; }
+    .dashboard-section   { height: auto; max-height: 500px; }
+}

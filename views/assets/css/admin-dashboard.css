@@ -1,0 +1,80 @@
+/* admin-dashboard.css */
+
+/* ── BASE ── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f4fa;
+    color: #0a1f44;
+}
+
+/* ── LAYOUT ── */
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ── CONTENT ── */
+.content-container {
+    margin-left: 240px;
+    flex: 1;
+    min-height: 100vh;
+    background: #f0f4fa;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 16px;
+    padding: 36px 40px;
+}
+
+/* ── STAT CARDS ── */
+.dashboard-info {
+    background: #ffffff;
+    border: 1.5px solid #e8edf5;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 12px rgba(0, 56, 168, 0.06);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    flex: 1 1 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
+}
+
+.dashboard-info:hover {
+    border-color: #c0d0f0;
+    box-shadow: 0 4px 20px rgba(0, 56, 168, 0.10);
+}
+
+.dashboard-info p:first-child {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #8a9bb5;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+
+.dashboard-info p:last-child {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0038a8;
+    line-height: 1;
+}
+
+/* ── ACCENT COLORS ── */
+#payments-container p:last-child  { color: #1a7a3c; }
+#disputes-container p:last-child  { color: #ce1126; }
+#enforcers-container p:last-child { color: #a06000; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .side-bar          { width: 200px; }
+    .content-container { margin-left: 200px; padding: 24px 20px; }
+    .dashboard-info    { max-width: calc(50% - 8px); }
+}
+
+@media (max-width: 640px) {
+    .side-bar          { width: 100%; height: auto; position: relative; }
+    .content-container { margin-left: 0; }
+    .dashboard-info    { max-width: 100%; }
+}

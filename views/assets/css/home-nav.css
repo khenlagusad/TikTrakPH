@@ -1,0 +1,95 @@
+/* Modern Philippine gov-tech nav */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8edf5;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    box-shadow: 0 2px 12px rgba(0, 56, 168, 0.08);
+}
+
+/* Left: Brand */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #0038a8, #0052cc);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcd116;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
+}
+
+.brand-text span {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #0a1f44;
+    letter-spacing: -0.3px;
+}
+
+.brand-text small {
+    display: block;
+    font-size: 0.6rem;
+    color: #0038a8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+/* Right: Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #3a4a5c;
+}
+
+.nav-links a:hover {
+    background-color: #f0f4ff;
+    color: #0038a8;
+}
+
+/* Login button - white with blue border */
+.nav-links a.btn-login {
+    color: #0038a8;
+    background-color: #ffffff;
+    border: 1.5px solid #0038a8;
+}
+
+.nav-links a.btn-login:hover {
+    background-color: #f0f4ff;
+}
+
+/* Register button - solid blue */
+.nav-links a.btn-register {
+    color: #ffffff;
+    background-color: #0038a8;
+    border: 1.5px solid #0038a8;
+}
+
+.nav-links a.btn-register:hover {
+    background-color: #002d8a;
+    border-color: #002d8a;
+}

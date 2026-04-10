@@ -1,0 +1,100 @@
+/* ── USER NAV ── */
+.user-nav {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8edf5;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    box-shadow: 0 2px 12px rgba(0, 56, 168, 0.08);
+    z-index: 100;
+}
+
+/* ── LEFT NAV ── */
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #0038a8, #0052cc);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcd116;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
+    text-decoration: none;
+}
+
+.user-profile-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #e8edf5;
+    transition: background-color 0.15s, border-color 0.15s;
+    line-height: 1;
+    gap: 3px;
+}
+
+.user-profile-btn:hover {
+    background-color: #f0f4ff;
+    border-color: #b0c0e8;
+}
+
+.user-profile-btn .username {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin: 0;
+}
+
+.user-profile-btn .license-no {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #8a9bb5;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0;
+}
+
+/* ── RIGHT NAV ── */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.right-nav a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #ce1126;
+    border: 1.5px solid #ffc5c5;
+    background-color: #fff0f0;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.right-nav a:hover {
+    background-color: #ffe0e0;
+    border-color: #ce1126;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .user-nav { padding: 0 20px; }
+    .user-profile-btn .license-no { display: none; }
+}

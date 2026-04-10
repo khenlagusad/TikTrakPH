@@ -1,0 +1,254 @@
+/* ── HERO ── */
+.dispute-hero {
+    background-color: #0038a8;
+    background-image: linear-gradient(135deg, #0038a8 0%, #0052cc 60%, #003080 100%);
+    padding: 40px 48px;
+}
+
+.dispute-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.dispute-greeting {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.dispute-hero h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.dispute-sub {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── CONTAINER ── */
+.dispute-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ── SECTION LABELS ── */
+.section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #0038a8;
+    margin-bottom: 3px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin: 0;
+}
+
+/* ── TICKET INFO CARD ── */
+.ticket-info-card {
+    background: #f0f4ff;
+    border: 1.5px solid #d0daf0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ticket-info-header {
+    padding: 18px 24px;
+    border-bottom: 1.5px solid #d0daf0;
+}
+
+.ticket-info-body {
+    padding: 0;
+}
+
+.ticket-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #d0daf0;
+}
+
+.ticket-info-item:last-child {
+    border-bottom: none;
+}
+
+.ticket-info-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #8a9bb5;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.ticket-info-value {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #0a1f44;
+}
+
+.ticket-ref {
+    font-family: monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0038a8;
+    background: #ffffff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+/* ── DISPUTE CARD ── */
+.dispute-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 56, 168, 0.07);
+    overflow: hidden;
+}
+
+.dispute-card-header {
+    padding: 20px 24px;
+    border-bottom: 1.5px solid #f0f4f8;
+}
+
+/* ── FORM ── */
+.dispute-form-wrap {
+    padding: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #3a4a5c;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 11px 16px;
+    border: 1.5px solid #e0e7f0;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    color: #0a1f44;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0038a8;
+    box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bbc5d4;
+    font-weight: 500;
+}
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+    border-color: #ce1126;
+    box-shadow: 0 0 0 3px rgba(206, 17, 38, 0.08);
+}
+
+.error-msg {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #ce1126;
+    margin-top: 5px;
+    height: 14px;
+    visibility: hidden;
+}
+
+.error-msg:not(:empty) {
+    visibility: visible;
+}
+
+/* ── ERROR MESSAGE ── */
+.dispute-error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    margin: 16px 24px 0;
+    border-radius: 10px;
+    background: #fff0f0;
+    border: 1.5px solid #ffc5c5;
+    color: #ce1126;
+}
+
+.dispute-error::before { content: '❌'; }
+
+/* ── FORM ACTIONS ── */
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-cancel {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #3a4a5c;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 1.5px solid #e0e7f0;
+    border-radius: 8px;
+    transition: background-color 0.15s;
+}
+
+.btn-cancel:hover { background-color: #f5f8ff; }
+
+.btn-submit {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #0038a8;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover { background-color: #002d8a; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .dispute-hero      { padding: 32px 20px; }
+    .dispute-container { padding: 24px 16px 56px; }
+    .ticket-info-item  { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .form-actions      { flex-direction: column-reverse; }
+    .btn-cancel, .btn-submit { width: 100%; text-align: center; }
+}

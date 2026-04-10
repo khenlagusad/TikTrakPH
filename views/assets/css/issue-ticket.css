@@ -1,0 +1,227 @@
+/* ── LAYOUT ── */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 220px;
+  flex: 1;
+  background: #f0f4fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HERO ── */
+.it-hero {
+  background: #0038a8;
+  padding: 38px 48px 42px;
+  position: relative;
+  overflow: hidden;
+}
+
+.it-hero::before {
+  content: '';
+  position: absolute;
+  right: -50px; top: -50px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.it-hero::after {
+  content: '';
+  position: absolute;
+  right: 100px; bottom: -70px;
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  background: rgba(252, 209, 22, 0.06);
+  pointer-events: none;
+}
+
+.it-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(252, 209, 22, 0.15);
+  border: 1px solid rgba(252, 209, 22, 0.28);
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin-bottom: 14px;
+}
+
+.it-badge span {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fcd116;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.it-hero h1 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.it-hero p {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+/* ── BODY ── */
+.it-body {
+  padding: 32px 40px 64px;
+  max-width: 780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── REF BANNER ── */
+.it-ref-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1.5px solid #d0daf0;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+
+.it-ref-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #8a9bb5;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  margin-bottom: 4px;
+}
+
+.it-ref-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0038a8;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+.it-ref-badge {
+  background: #f0f4ff;
+  border: 1px solid #d0daf0;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #8a9bb5;
+}
+
+/* ── CARD ── */
+.it-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1.5px solid #e8edf5;
+  overflow: hidden;
+}
+
+.it-card-header {
+  padding: 20px 28px;
+  border-bottom: 1.5px solid #f0f4f8;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.it-card-icon {
+  width: 40px;
+  height: 40px;
+  background: #f0f4ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.it-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0a1f44;
+}
+
+.it-card-sub {
+  font-size: 0.74rem;
+  color: #8a9bb5;
+  margin-top: 2px;
+}
+
+/* ── FORM ── */
+.it-form-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.it-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.it-divider {
+  border: none;
+  border-top: 1.5px solid #f0f4f8;
+  margin: 0;
+}
+
+/* ── FORM GROUP ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #3a4a5c;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #e0e7f0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #2c3e50;
+  background: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0038a8;
+  box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.08);
+}
+
+/* Locked / readonly fields — slightly grayed */
+.form-group input[readonly] {
+  background: #f5f7fb;
+  color: #8a9bb5;
+  cursor: not-allowed;
+  border-color: #e8edf5;
+}

@@ -1,0 +1,324 @@
+/* ── HERO ── */
+.hero {
+    background-color: #0038a8;
+    background-image: linear-gradient(135deg, #0038a8 0%, #0052cc 60%, #003080 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(252, 209, 22, 0.15);
+    border: 1px solid rgba(252, 209, 22, 0.35);
+    color: #fcd116;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #fcd116;
+}
+
+.hero > p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.05rem;
+    max-width: 520px;
+    margin: 0 auto 40px;
+}
+
+/* ── SEARCH BOX ── */
+.search-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    max-width: 580px;
+    margin: 0 auto;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+.search-box h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8a9bb5;
+    margin-bottom: 16px;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tab {
+    flex: 1;
+    padding: 9px;
+    border: 1.5px solid #e8edf5;
+    border-radius: 8px;
+    background: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #8a9bb5;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.tab:hover {
+    border-color: #0038a8;
+    color: #0038a8;
+    background-color: #f0f4ff;
+}
+
+.tab.active {
+    background-color: #0038a8;
+    color: #ffffff;
+    border-color: #0038a8;
+}
+
+.search-input-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input-wrap input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1.5px solid #e8edf5;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95rem;
+    color: #0a1f44;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: border-color 0.2s;
+}
+
+.search-input-wrap input:focus {
+    border-color: #0038a8;
+}
+
+.search-input-wrap input.input-error {
+    border-color: #ce1126;
+}
+
+.search-input-wrap input::placeholder {
+    letter-spacing: 0;
+    text-transform: none;
+    color: #bbc5d4;
+}
+
+.search-input-wrap button {
+    padding: 12px 24px;
+    background-color: #ce1126;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.search-input-wrap button:hover {
+    background-color: #a50e1f;
+}
+
+/* Error message — space always reserved, no layout shift */
+.search-box .error-msg {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ce1126;
+    margin-top: 6px;
+    height: 16px;
+    visibility: hidden;
+}
+
+.search-note {
+    font-size: 0.75rem;
+    color: #8a9bb5;
+    margin-top: 10px;
+}
+
+/* ── STATS ── */
+.stats {
+    background-color: #f5f8ff;
+    border-bottom: 1px solid #e8edf5;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0038a8;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    color: #8a9bb5;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 4px;
+}
+
+/* ── SECTIONS ── */
+section {
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0038a8;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: #0a1f44;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.section-sub {
+    color: #8a9bb5;
+    max-width: 480px;
+    font-size: 0.95rem;
+}
+
+/* ── FEATURES ── */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 1.5px solid #e8edf5;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.feature-card:hover {
+    border-color: #0038a8;
+    box-shadow: 0 8px 32px rgba(0, 56, 168, 0.1);
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 0.875rem;
+    color: #8a9bb5;
+    line-height: 1.6;
+}
+
+/* ── HOW IT WORKS ── */
+.how-section {
+    background-color: #f5f8ff;
+    border-top: 1px solid #e8edf5;
+    border-bottom: 1px solid #e8edf5;
+}
+
+.how-section > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 72px 40px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background-color: #0038a8;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.step h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-bottom: 6px;
+}
+
+.step p {
+    font-size: 0.825rem;
+    color: #8a9bb5;
+    line-height: 1.5;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .hero { padding: 56px 20px; }
+    .search-input-wrap { flex-direction: column; }
+    section { padding: 48px 20px; }
+}
